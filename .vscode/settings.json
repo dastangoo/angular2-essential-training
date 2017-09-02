@@ -2,6 +2,7 @@
 {
 	"editor.tabSize": 2,
 	"editor.insertSpaces": true,
+	"files.autoSave": "afterDelay",
 	"files.exclude": {
 		"**/node_modules": {},
 		"typings": {},
