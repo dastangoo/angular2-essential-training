@@ -1,5 +1,8 @@
 <h2>{{ mediaItem.name }}</h2>
-<div>Watched on {{ mediaItem.watchedOn }}</div>
+<template [ngIf]="media.watchedOn">
+    <div>Watched on {{ mediaItem.watchedOn }}</div>    
+</template>
+<!-- <div *ngIf="mediaItem.watchedOn">Watched on {{ mediaItem.watchedOn }}</div> -->
 <div>{{ mediaItem.category }}</div>
 <div>{{ mediaItem.year }}</div>
 <div class="tools">
@@ -9,7 +12,7 @@
   </svg>
   <a class="delete" (click)="onDelete()">
     remove
-  </a>
+  </a> 
   <a class="details">
     watch
   </a>
